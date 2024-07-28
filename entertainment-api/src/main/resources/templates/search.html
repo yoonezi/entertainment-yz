@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Search</title>
+</head>
+<body>
+<h1>Video Search Results</h1>
+<form action="/search" method="get">
+    <input type="text" name="query" placeholder="Search for videos" />
+    <button type="submit">Search</button>
+</form>
+<div>
+    <pre th:text="${response}"></pre>
+</div>
+</body>
+</html>
